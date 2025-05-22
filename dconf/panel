@@ -1,0 +1,52 @@
+[org/mate/panel/general]
+toplevel-id-list=['bottom']
+object-id-list=['briskmenu', 'show-desktop', 'window-list', 'notification-area', 'indicatorappletcomplete']
+
+[org/mate/panel/toplevels/bottom]
+orientation='bottom'
+size=30
+
+[org/mate/panel/objects/briskmenu]
+object-type='menu'
+toplevel-id='bottom'
+tooltip='Iniciar'
+has-arrow=false
+locked=true
+
+[com/solus-project/brisk-menu]
+hot-key='Super_L'
+
+[org/mate/panel/objects/window-list]
+applet-iid='WnckletFactory::WindowListApplet'
+toplevel-id='bottom'
+position=2
+object-type='applet'
+panel-right-stick=false
+
+
+[org/mate/panel/objects/indicatorappletcomplete]
+object-type='applet'
+applet-iid='IndicatorAppletCompleteFactory::IndicatorAppletComplete'
+toplevel-id='bottom'
+panel-right-stick=true
+position=1
+
+[org/mate/panel/objects/notification-area]
+object-type='applet'
+applet-iid='NotificationAreaAppletFactory::NotificationArea'
+toplevel-id='bottom'
+panel-right-stick=true
+position=2
+
+[org/mate/panel/objects/clock-applet]
+object-type='applet'
+applet-iid='ClockAppletFactory::ClockApplet'
+toplevel-id='bottom'
+panel-right-stick=true
+position=0
+
+[org/ayatana/indicator/datetime]
+show-date= true
+show-day= true
+show-year= true
+custom-time-format= '%l:%M %p'
